@@ -1,4 +1,4 @@
-# Multi Allelic Locus Alleles (MALAs) Detection A Population of A Hybrid Species
+# Multi Allelic Locus Alleles (MALAs) Detection From A Population of A Hybrid Species
 
 # Get libraries
 import pandas as pd
