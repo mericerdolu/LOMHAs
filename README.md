@@ -1,2 +1,6 @@
 # MALAs
-Detect the multi allelic locus alleles in the hybrid populations using DNA-based data.
+Detect the multi allelic locus alleles in the hybrid and parental populations using DNA-based data.
+
+The python script "MALAsHyb.py" is for detecting the multi allelic locus alleles in the hybrid population. It takes the fasta files of the hybrid individuals with ".fa" extension from the current working directory as an input and gives the "h0DFMultiAlleles" files as output which includes locus numbers in the first column and MALAs sequence in the second column of the multi allelic locus alleles in the population of the hybrid species.
+
+The python script "MALAsPar.py" is for detecting whether the multi allelic locus alleles are in the populations of maternal and paternal species. It is given the paternal and maternal fasta files including all data of all individuals, and it takes the output file "h0DFMultiAlleles" of the script "MALAsHyb.py" as inputs. It gives three output files "P_h0DFMultiAlleles" having MALAs in the paternal species, "M_h0DFMultiAlleles" having MALAs in the maternal species, and "MP_h0DFMultiAlleles" having MALAs present in both maternal and paternal species. These files involves two columns one of which has number of locus and second one has the multi allelic locus allele sequences.
