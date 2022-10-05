@@ -49,7 +49,7 @@ with open(sys.argv[1], "r") as p1:
 ## Hybrid code part
 # Get the hybrid MALAs file from the cureent working directory
 import glob
-for h_file in glob.glob.("h0DFMultiAlleles"):
+for h_file in glob.glob("h0DFMultiAlleles"):
     h0DF = pd.read_csv(h_file, sep="\t", header=None)
     h0DF.rename(columns={0: 'SeqNames', 1:'Seq'}, inplace=True)
 
