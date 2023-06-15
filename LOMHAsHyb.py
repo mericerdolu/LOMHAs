@@ -40,7 +40,7 @@ h0DFNo_DupSort = h0DFNo_Dup.sort_values(by=['SeqNames'], ascending=False)
 
 
 # Detect tri or more haplotypic states through the hybrid indvs.
-# and saved them in the "h0DF*" output object
+# and save them in the "h0DF*" output object
 for line in h0DFNo_DupSort['SeqNames'].unique():
     lidx = h0DFNo_DupSort.index[h0DFNo_DupSort['SeqNames'] == str(line)].tolist()
     if len(lidx) < 3 :
