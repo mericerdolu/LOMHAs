@@ -12,7 +12,7 @@ for h_file in h0_list:
     h0 = h0.append(h0_pr)
 
 
-    # Convert the sigle-column fasta data frame to two-column data frame
+    # Make the data frame of fasta two-column data frame (i.e. Col.1:Fasta Tag, Col.2:Sequence)
     rowIndex = h0.index[:]
     idx = rowIndex.values.tolist()
 
