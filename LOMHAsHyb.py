@@ -9,7 +9,7 @@ h0_list = glob.glob("*.fa")
 h0 = pd.DataFrame()
 for h_file in h0_list:
     h0_pr = pd.read_csv(h_file, sep="\t", header=None)
-    h0 = pd.concat([h0, h0_pr])
+    h0 = h0.append(h0_pr)
 
 
     # Make the data frame of fasta a two-column data frame (i.e. Col.1:The fasta tag, Col.2:The sequence)
