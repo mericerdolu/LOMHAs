@@ -12,7 +12,7 @@ for h_file in h0_list:
     h0 = pd.concat([h0, h0_pr])
 
 
-    # Make the data frame of fasta two-column data frame (i.e. Col.1:Fasta Tag, Col.2:Sequence)
+    # Make the data frame of fasta a two-column data frame (i.e. Col.1:The fasta tag, Col.2:The sequence)
     rowIndex = h0.index[:]
     idx = rowIndex.values.tolist()
 
